@@ -115,7 +115,7 @@ class _myHomePageState extends State<homePageselect> {
             decoration: InputDecoration(
                 hintText: "Search By Name",
                 hintStyle: TextStyle(
-                    fontSize: 15,
+                    fontSize: 17,
                     fontWeight: FontWeight.bold,
                     color: Colors.white)),
             autofocus: true,

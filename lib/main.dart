@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:imagestorage/results.dart';
 import 'crud_operations.dart';
 import 'students.dart';
 import 'dart:async';
@@ -15,6 +16,14 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primarySwatch: Colors.indigo,
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.cyan,
+      ),
       home: homePage(),
     );
   }
@@ -182,7 +191,7 @@ class _myHomePageState extends State<homePage> {
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black),),
+                    color: Colors.indigoAccent),),
               onTap: () {
                 Navigator.push(context,
                     new MaterialPageRoute(builder: (context) => new homePageinsert()));
@@ -193,7 +202,7 @@ class _myHomePageState extends State<homePage> {
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black),),
+                    color: Colors.indigoAccent),),
               onTap: () {
                 Navigator.push(context,
                     new MaterialPageRoute(builder: (context) => new homePageupdate()));
@@ -204,10 +213,21 @@ class _myHomePageState extends State<homePage> {
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black),),
+                    color: Colors.indigoAccent),),
               onTap: () {
                 Navigator.push(context,
                     new MaterialPageRoute(builder: (context) => new homePageselect()));
+              },
+            ),
+            ListTile(
+              title: Text("Results",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.indigoAccent),),
+              onTap: () {
+                Navigator.push(context,
+                    new MaterialPageRoute(builder: (context) => new homePageresults()));
               },
             ),
           ],

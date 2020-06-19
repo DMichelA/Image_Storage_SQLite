@@ -296,6 +296,7 @@ class _myHomePageState extends State<homePageinsert> {
       resizeToAvoidBottomPadding: false,
       key: _scaffoldkey,
       appBar: new AppBar(
+        automaticallyImplyLeading: false,
         title: Text('Insert Operation',
           style: TextStyle(
               fontSize: 20,

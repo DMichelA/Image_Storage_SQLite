@@ -395,6 +395,7 @@ class _myHomePageState extends State<homePageupdate> {
       resizeToAvoidBottomPadding: false,
       key: _scaffoldkey,
       appBar: new AppBar(
+        automaticallyImplyLeading: false,
         title: Text('Update Operation',
           style: TextStyle(
               fontSize: 20,
